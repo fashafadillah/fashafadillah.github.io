@@ -46,6 +46,27 @@ body {
   border-radius: 6px;
   padding: 8px 16px;
 }
+/* Podcast App Sections */
+#podcast-section {
+  margin-top: 7.5rem;
+}
+#podcast-section .title-podcast {
+  background: linear-gradient(93.97deg, #4cdc86 30.89%, #dc9a4c 87.52%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 2rem;
+}
+#podcast-section .deskripsi-podcast {
+  color: #bcbcbc;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+#podcast-section .img-podcast {
+  margin-top: 1rem;
+}
+/* End of Podcast App Sections */
 /* ALL Size */
 
 /* DESKTOP */
@@ -96,34 +117,7 @@ body {
     color: white;
   }
 
-  .chevron-selected:hover {
-    background: #4cdc86;
-  }
-
   /* End of Hero Section */
-
-  /* Podcast App Sections */
-  #podcast-section {
-    margin-top: 7.75rem;
-  }
-  #podcast-section h3 {
-    font-size: 2rem;
-  }
-  #podcast-section p {
-    margin-top: 1.5rem;
-    color: #404040;
-    font-size: 1rem;
-  }
-  #podcast-section .podcast-thumbnail {
-    margin-top: 1.5rem;
-  }
-  #podcast-section .img-podcast {
-    filter: drop-shadow(0px 1px 30px rgba(0, 0, 0, 0.15));
-  }
-  #podcast-section .btn-more {
-    margin-top: 1.5rem;
-  }
-  /* End of Podcast App Sections */
 }
 /* DESKTOP */
 
@@ -151,38 +145,22 @@ body {
   .btn-hero {
     margin-top: 32px;
   }
-
-  #podcast-section {
-    margin-top: 7.75rem;
-  }
-  #podcast-section .img-podcast {
-    margin-top: 2rem;
-  }
 }
 /* TABLET */
 
 /* Mobile */
 @media (min-width: 2px) and (max-width: 767.98px) {
   .container {
-    max-width: 90%;
+    max-width: 95%;
   }
   .hero-sections {
     margin-top: 3.75rem;
   }
 
   .btn {
-    box-shadow: 0px 1px 2px rgba(255, 255, 255, 0.15);
     border-radius: 6px;
     padding: 8px 16px;
     font-size: 12px;
-  }
-  .btn-more:hover {
-    background-color: #9d9d9d;
-    border-color: #9d9d9d;
-  }
-  .btn-selected:hover {
-    background-color: none;
-    border-color: #9d9d9d;
   }
 
   .hero-sections h1 {
@@ -202,12 +180,6 @@ body {
   }
   .nav-link {
     text-align: center;
-  }
-  #podcast-section {
-    margin-top: 3.75rem;
-  }
-  #podcast-section .img-podcast {
-    margin-top: 2rem;
   }
 }
 /* Mobile */
