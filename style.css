@@ -1,6 +1,52 @@
 body {
   font-family: "Inter", sans-serif;
+  background-color: #262626;
 }
+
+/* ALL Size */
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: white !important;
+}
+.nav-link {
+  font-weight: 500;
+  color: white !important;
+}
+.hero-sections h1 {
+  font-weight: 300;
+  color: white;
+}
+.hero-sections h1 span {
+  font-weight: 500;
+  background: linear-gradient(93.97deg, #4cdc86 30.89%, #dc9a4c 87.52%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.btn-more {
+  border-radius: 6px;
+  border-image: linear-gradient(93.97deg, #4cdc86 30.89%, #dc9a4c 87.52%);
+  border-image-slice: 30%;
+  border-style: 10px solid;
+  border-radius: 6px;
+  color: white;
+}
+.btn-more:hover {
+  color: white;
+}
+
+.btn-selected {
+  color: white;
+}
+.btn-selected:hover {
+  color: white;
+}
+.btn {
+  border-radius: 6px;
+  padding: 8px 16px;
+}
+/* ALL Size */
 
 /* DESKTOP */
 @media (min-width: 1200px) {
@@ -11,37 +57,47 @@ body {
   .nav-link {
     margin-left: 2.5rem;
   }
-  .nav-link {
-    font-weight: 500;
-    color: black !important;
-  }
+
   .hero-sections {
-    margin-top: 7.75rem;
+    margin-top: 7.5rem;
   }
 
-  .btn {
-    box-shadow: 0px 1px 2px rgba(255, 255, 255, 0.15);
-    border-radius: 6px;
-    padding: 8px 16px;
-  }
   .hero-sections h1 {
     font-size: 2.25rem;
     font-weight: 300;
+    color: white;
   }
   .hero-sections h1 span {
     font-weight: 500;
+    background: linear-gradient(93.97deg, #4cdc86 30.89%, #dc9a4c 87.52%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
   .btn-hero {
-    margin-top: 32px;
+    margin-top: 40px;
+  }
+  .btn-more {
+    border-radius: 6px;
+    border-image: linear-gradient(93.97deg, #4cdc86 30.89%, #dc9a4c 87.52%);
+    border-image-slice: 30%;
+    border-style: 10px solid;
+    border-radius: 6px;
+    color: white;
   }
   .btn-more:hover {
-    background-color: #9d9d9d;
-    border-color: #9d9d9d;
+    color: white;
   }
 
+  .btn-selected {
+    color: white;
+  }
   .btn-selected:hover {
-    background-color: none;
-    border-color: #9d9d9d;
+    color: white;
+  }
+
+  .chevron-selected:hover {
+    background: #4cdc86;
   }
 
   /* End of Hero Section */
@@ -76,22 +132,10 @@ body {
   .container {
     max-width: 80%;
   }
-  .nav-link {
-    margin-left: 2.5rem;
-  }
-  .nav-link {
-    font-weight: 500;
-    color: black !important;
-  }
   .hero-sections {
     margin-top: 7.75rem;
   }
 
-  .btn {
-    box-shadow: 0px 1px 2px rgba(255, 255, 255, 0.15);
-    border-radius: 6px;
-    padding: 8px 16px;
-  }
   .hero-sections h1 {
     font-size: 2.25rem;
     font-weight: 300;
@@ -107,14 +151,7 @@ body {
   .btn-hero {
     margin-top: 32px;
   }
-  .btn-more:hover {
-    background-color: #9d9d9d;
-    border-color: #9d9d9d;
-  }
-  .btn-selected:hover {
-    background-color: none;
-    border-color: #9d9d9d;
-  }
+
   #podcast-section {
     margin-top: 7.75rem;
   }
@@ -128,13 +165,6 @@ body {
 @media (min-width: 2px) and (max-width: 767.98px) {
   .container {
     max-width: 90%;
-  }
-  .nav-link {
-    margin-left: 2.5rem;
-  }
-  .nav-link {
-    font-weight: 500;
-    color: black !important;
   }
   .hero-sections {
     margin-top: 3.75rem;
