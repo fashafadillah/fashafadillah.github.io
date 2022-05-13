@@ -1,9 +1,14 @@
+* {
+  font-family: "Inter", sans-serif;
+}
 body {
   background-color: #262626;
-  font-family: "Inter" sans-serif;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+}
+.container {
+  width: 80%;
 }
 
 /* NAVBAR */
@@ -21,17 +26,13 @@ nav ul {
 }
 nav ul li a {
   text-decoration: none;
-  margin-left: 24px;
+  margin-left: 40px;
   color: white;
 }
 
 nav ul li a:hover {
   text-decoration: underline;
   color: white;
-}
-
-.btn-main {
-  display: none;
 }
 
 /* NAVBAR */
@@ -83,14 +84,56 @@ nav ul li a:hover {
 .header-image {
   background-image: url(img/header-background.png);
   background-size: cover;
-  height: 100vh;
+  height: 80vh;
   width: 100%;
   background-position: center;
+}
+.text-hero {
+  font-size: 2.5rem;
+  color: white;
+  font-weight: 500;
+  margin-top: 200px;
+}
+.btn-main {
+  background-color: white;
+  color: #262626;
+  padding: 12px 24px;
+  border-radius: 30px;
+  border: none;
+}
+.btn-main:hover {
+  background-color: transparent;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 30px;
+  border: none;
+  text-decoration: none;
+}
+.btn-second {
+  background-color: transparent;
+  color: white;
+  padding: 12px 24px;
+}
+.btn-second:hover {
+  background-color: transparent;
+  color: white;
+  padding: 12px 24px;
+}
+.form-control,
+.btn {
+  box-shadow: none !important;
+  outline: none !important;
 }
 /* Hero section */
 
 /* Mobile */
 @media screen and (max-width: 576px) {
+  .container {
+    width: 90%;
+  }
+  .text-hero {
+    margin-top: 150px;
+  }
   .menu-toggle {
     display: flex;
   }
@@ -116,29 +159,6 @@ nav ul li a:hover {
   }
   nav ul.slide {
     transform: translateX(0);
-  }
-
-  .btn-main {
-    display: block;
-    background-color: white;
-    color: #262626;
-    padding: 12px 24px;
-    border-radius: 30px;
-    border: none;
-  }
-  .btn-main:hover {
-    display: block;
-    background-color: #262626;
-    color: white;
-    padding: 12px 24px;
-    border-radius: 30px;
-    border: none;
-    text-decoration: none;
-  }
-  .form-control,
-  .btn {
-    box-shadow: none !important;
-    outline: none !important;
   }
 }
 /* Mobile */
