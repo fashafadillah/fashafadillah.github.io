@@ -123,6 +123,31 @@ nav ul li a:hover {
 }
 /* Hero section */
 
+/* TAB MENU SECTION */
+#menu-section ul {
+  display: flex;
+  justify-content: start;
+}
+#menu-section ul li {
+  list-style-type: none;
+}
+.btn-tabs.active {
+  padding: 8px 16px;
+  background-color: white;
+  font-size: 14px;
+  border-radius: 30px;
+  color: #262626;
+}
+.btn-tabs {
+  padding: 8px 16px;
+  background-color: transparent;
+  color: white;
+  font-size: 14px;
+  border-radius: 30px;
+}
+
+/* TAB MENU SECTION */
+
 /* Mobile */
 @media screen and (max-width: 576px) {
   .container {
@@ -148,6 +173,9 @@ nav ul li a:hover {
     justify-content: center;
     transform: translateY(-100%);
     transition: all 1s;
+  }
+  nav ul li {
+    margin-bottom: 32px;
   }
   nav ul li a {
     text-decoration: none;
