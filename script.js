@@ -5,9 +5,5 @@ menuToggle.addEventListener("click", function () {
   nav.classList.toggle("slide");
 });
 
-const btnTabs = document.querySelector(".btn-tabs");
-const btn = document.querySelector(".menu-section ul li");
-
-btnTabs.addEventListener("click", function () {
-  btn.classList.toggle("active");
-});
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+const tooltipList = [...tooltipTriggerList].map((tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl));
