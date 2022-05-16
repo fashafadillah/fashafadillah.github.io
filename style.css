@@ -3,13 +3,22 @@ body {
   overflow-x: hidden !important;
   font-family: "Inter", sans-serif;
 }
+.container {
+  width: 80%;
+}
 
 /* NAVBAR */
+nav .logo a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  font-weight: 600;
+}
 nav {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
-  margin-top: 16px;
+  align-items: flex-start;
+  padding-top: 16px;
 }
 nav ul {
   display: flex;
@@ -19,7 +28,7 @@ nav ul {
 }
 nav ul li a {
   text-decoration: none;
-  margin-left: 40px;
+  margin-left: 24px;
   color: white;
 }
 
@@ -74,44 +83,58 @@ nav ul li a:hover {
 /* Hamburger Menu */
 
 /* Hero section */
-.header-image {
-  background-image: url(img/header-background.png);
-  background-size: cover;
-  height: 80vh;
-  width: 100%;
-  background-position: center;
+#hero-section {
+  margin-top: 100px;
 }
 .text-hero {
-  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 44px;
   color: white;
+}
+.text-available {
+  margin-top: 16px;
+  font-style: normal;
   font-weight: 400;
-  margin-top: 200px;
+  font-size: 0.8rem;
+  line-height: 24px;
+  color: #ababab;
 }
 .btn-main {
+  margin-top: 32px;
   background-color: white;
   color: #262626;
-  padding: 12px 24px;
+  padding: 12px 20px;
   border-radius: 30px;
   border: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 22px;
 }
 .btn-main:hover {
   background-color: transparent;
   color: white;
-  padding: 12px 24px;
+  padding: 12px 20px;
   border-radius: 30px;
   border: none;
   text-decoration: none;
 }
 .btn-second {
+  margin-top: 32px;
   background-color: transparent;
   color: white;
   padding: 12px 24px;
+  font-size: 0.9rem;
+  line-height: 22px;
 }
 .btn-second:hover {
   background-color: transparent;
   color: white;
   padding: 12px 24px;
 }
+
 .form-control,
 .btn {
   box-shadow: none !important;
@@ -122,21 +145,25 @@ nav ul li a:hover {
 /* TAB MENU SECTION */
 .nav-pills {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: start;
+  margin-top: 100px;
 }
 
 .nav-pills .nav-link.active {
   background-color: white;
   color: #262626;
-  font-weight: 500;
+
   border-radius: 30px;
   padding: 6px 16px;
   transition: all 0.8s;
+  font-size: 0.9rem;
 }
 .nav-pills .nav-link {
   color: #a7a7a7;
   border-radius: 30px;
   padding: 6px 16px;
+  font-size: 0.9rem;
+  margin-right: 24px;
 }
 /* TAB MENU SECTION */
 /* TAB MENU SECTION */
@@ -144,41 +171,48 @@ nav ul li a:hover {
 .btn-study {
   color: white !important;
   cursor: not-allowed !important;
-  font-size: 16px;
+  font-size: 0.9rem;
+  padding: 0;
+  margin-top: 24px;
+  font-weight: 400;
 }
 /* CASE STUDY */
-
+/* LINK TO TOP */
+.link-to-top {
+  margin-top: 100px;
+}
+.btn-to-top {
+  text-decoration: none;
+  color: #262626;
+  background-color: white;
+  border-radius: 30px;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+}
+/* LINK TO TOP */
 /* footer */
 footer {
   margin-top: 100px;
+  margin-bottom: 100px;
 }
-footer ul {
-  margin-top: 24px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-footer ul li {
-  list-style: none;
-}
-footer ul a {
-  margin-right: 16px;
-}
+
 .text-footer {
   font-size: 2rem;
   color: white;
   font-weight: 400;
+}
+.icon-footer {
+  margin-right: 16px;
+  text-decoration: none;
 }
 /* footer */
 
 /* Mobile */
 @media screen and (max-width: 576px) {
   .container {
-    width: 90%;
+    width: 95%;
   }
-  .text-hero {
-    margin-top: 200px;
-  }
+
   .menu-toggle {
     display: flex;
   }
@@ -192,31 +226,39 @@ footer ul a {
     height: 100vh;
     width: 100%;
     align-items: center;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
     transform: translateY(-100%);
     transition: all 1s;
   }
-  nav ul li {
-    margin-bottom: 32px;
-  }
+
   nav ul li a {
     text-decoration: none;
     color: #262626;
-    margin-left: 0;
-    background-color: white;
-    padding: 8px 32px;
-    border-radius: 26px;
+    margin-left: -30px;
   }
   nav ul li a:hover {
     text-decoration: none;
     color: white;
-    margin-left: 0;
-    background-color: #262626;
   }
   nav ul.slide {
     transform: translateY(0);
     font-weight: 500;
   }
+  .img-hero {
+    margin-top: 32px;
+    width: 100%;
+  }
 }
 /* Mobile */
+/* TABLET */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  .img-hero {
+    margin-top: 32px;
+    width: 100%;
+  }
+}
+/* TABLET */
