@@ -4,6 +4,6 @@ deployment:
     - export DEPLOYPATH=/home/u1665670/public_html/fashafadillah.xyz/
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp style.css $DEPLOYPATH
-    - /bin/cp -R img $DEPLOYPATH
+    - /bin/cp -R images $DEPLOYPATH
     - /bin/cp -R blog $DEPLOYPATH
     - /bin/cp script.js $DEPLOYPATH
