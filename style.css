@@ -7,21 +7,22 @@
   --font-sm: 0.9rem;
   --font-md: 1.25rem;
   --font-lg: 2.5rem;
-  --font-elg: 4.5rem;
+  --font-elg: 3.5rem;
   --border-radius: 6px;
   --shadow-box: 0px 0px 1px rgba(0, 0, 0, 0.3);
   --shadow-img: drop-shadow(0px 27px 11px rgba(0, 0, 0, 0.01)) drop-shadow(0px 15px 9px rgba(0, 0, 0, 0.05)) drop-shadow(0px 7px 7px rgba(0, 0, 0, 0.09)) drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.1))
     drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.1));
   --line-height: 60px;
 }
-
 .container {
-  width: 70%;
+  width: 75%;
 }
 body {
   background-color: var(--light-grey);
   font-family: "Work Sans", sans-serif;
-  padding: 0;
+}
+.row {
+  --bs-gutter-x: 24px;
 }
 /* Style for Desktop */
 /* NAVBAR */
@@ -51,14 +52,14 @@ body {
   font-size: var(--font-elg);
   font-weight: 700;
   margin-top: 12px;
-  line-height: 72px;
+  line-height: 60px;
 }
 .text-available {
   font-size: var(--font-md);
   color: var(--grey);
   display: flex;
-
   margin-top: 12px;
+  margin-bottom: 40px;
 }
 
 .text-available .typing {
@@ -81,7 +82,6 @@ body {
     opacity: 1;
   }
 }
-
 .btn-main {
   color: var(--white);
   background-color: var(--black);
@@ -90,40 +90,12 @@ body {
   border-radius: var(--border-radius);
   padding: var(--padding-button);
   text-decoration: none;
-  margin-top: 60px;
-
-  display: inline-block;
 }
 .btn-main:hover {
   color: var(--white);
   background-color: var(--grey);
 }
-.btn-secondary {
-  color: var(--black);
-  background-color: transparent;
-  font-size: var(--font-sm);
-  line-height: 24px;
-  border: 1px solid var(--black);
-  border-radius: var(--border-radius);
-  padding: var(--padding-button);
-  text-decoration: none;
-  margin-top: 60px;
-  margin-left: 8px;
-  display: inline-block;
-}
-.btn-secondary:hover {
-  color: var(--grey);
-  background-color: transparent;
-  font-size: var(--font-sm);
-  line-height: 24px;
-  border: 1px solid var(--grey);
-  border-radius: var(--border-radius);
-  padding: var(--padding-button);
-  text-decoration: none;
-  margin-top: 60px;
 
-  display: inline-block;
-}
 /* HERO SECTION */
 /* PROJECT SECTION */
 #projects-section {
@@ -243,6 +215,9 @@ footer ul li {
   }
   .navbar-nav {
     text-align: center;
+  }
+  .row {
+    --bs-gutter-x: 0;
   }
 }
 

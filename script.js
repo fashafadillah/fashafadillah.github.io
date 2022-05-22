@@ -1,4 +1,4 @@
-const texts = ["freelance project", "full time", "talk 1:1"];
+const texts = ["freelance", "full time", "talk 1:1"];
 let count = 0;
 let index = 0;
 let currenText = "";
