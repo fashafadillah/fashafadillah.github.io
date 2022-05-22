@@ -114,7 +114,7 @@ body {
   line-height: 24px;
 }
 .canvas-img {
-  padding: 60px;
+  padding: 30px;
   background-color: var(--white);
   margin-top: 60px;
   margin-bottom: 120px;
@@ -123,7 +123,7 @@ body {
 }
 .canvas-img img {
   width: 100%;
-  filter: var(--shadow-img);
+  box-shadow: var(--shadow-box);
 }
 /* PROJECT SECTION */
 /* BLOG */
@@ -218,6 +218,14 @@ footer ul li {
   }
   .row {
     --bs-gutter-x: 0;
+  }
+  .canvas-img {
+    padding: 32px;
+    background-color: var(--white);
+    margin-top: 60px;
+    margin-bottom: 120px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-box);
   }
 }
 
