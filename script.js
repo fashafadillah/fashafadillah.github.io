@@ -1,9 +1,19 @@
-const menuToggle = document.querySelector(".menu-toggle input");
-const nav = document.querySelector("nav ul");
+const texts = ["freelance project", "full time", "talk 1:1"];
+let count = 0;
+let index = 0;
+let currenText = "";
+let letter = "";
 
-menuToggle.addEventListener("click", function () {
-  nav.classList.toggle("slide");
-});
-
-const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
-const tooltipList = [...tooltipTriggerList].map((tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl));
+(function type() {
+  if (count === texts.length) {
+    count = 0;
+  }
+  currenText = texts[count];
+  letter = currenText.slice(0, ++index);
+  document.querySelector(".typing").textContent = letter;
+  if (letter.length === currenText.length) {
+    count++;
+    index = 0;
+  }
+  setTimeout(type, 300);
+})();
