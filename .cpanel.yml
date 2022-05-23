@@ -12,5 +12,6 @@ deployment:
     - /bin/cp writing.css $DEPLOYPATH
     - /bin/cp script.js $DEPLOYPATH
     - /bin/cp activePage.js $DEPLOYPATH
+    - /bin/cp .htaccess $DEPLOYPATH
     - /bin/cp -R images $DEPLOYPATH
     - /bin/cp -R writing $DEPLOYPATH
