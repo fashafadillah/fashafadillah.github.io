@@ -2,9 +2,10 @@
   margin-right: var(--margin-right-24);
   font-size: var(--font-sm);
   line-height: var(--line-height-sm);
+  color: red;
 }
 
-.nav-link:is(:link, :active, :visited).active {
+.nav-link.active {
   font-weight: 500;
   text-decoration: underline;
 }
