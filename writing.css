@@ -1,0 +1,38 @@
+#header-section {
+  margin-top: var(--margin-top-120);
+}
+
+.text-hero-blog {
+  font-size: var(--font-elg);
+  font-weight: 700;
+  line-height: var(--line-height-elg);
+}
+.text-header-blog {
+  font-size: var(--font-sm);
+  color: var(--grey);
+  margin-top: var(--margin-top-12);
+}
+
+#top-blog {
+  margin-top: var(--margin-top-120);
+}
+
+.title-blog {
+  font-size: var(--font-md);
+  line-height: var(--line-height-md);
+  font-weight: 600;
+}
+.title-paragraf {
+  font-size: var(--font-sm);
+  line-height: var(--line-height-sm);
+  color: var(--grey);
+}
+.date-blog {
+  font-size: var(--font-sm);
+  color: var(--grey);
+  font-weight: 500;
+}
+
+#list-blog {
+  margin-top: var(--margin-top-120);
+}

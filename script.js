@@ -1,3 +1,4 @@
+// TEXT AVAILABLE
 const texts = ["freelance", "full time", "talk 1:1"];
 let count = 0;
 let index = 0;
@@ -17,3 +18,6 @@ let letter = "";
   }
   setTimeout(type, 300);
 })();
+
+// TEXT AVAILABLE
+// NAV LINK ACTIVE

@@ -1,0 +1,23 @@
+footer {
+  margin-top: var(--margin-top-120);
+  margin-bottom: var(--margin-bottom-60);
+}
+.text-footer {
+  font-size: var(--font-md);
+  line-height: var(--line-height-md);
+  color: var(--grey);
+}
+.text-footer span a {
+  font-weight: 500;
+  color: var(--black);
+  text-decoration: underline;
+}
+.text-footer span a:hover {
+  font-weight: 500;
+  color: var(--grey);
+  text-decoration: underline;
+}
+
+.icon-socmed a {
+  margin-right: var(--margin-right-12);
+}
